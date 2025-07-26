@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Personal | Anupam Kumar{% endblock %}
+{% block content %}
+<section class="personal">
+    <div class="container">
+        <h2>Personal Information</h2>
+        <ul class="personal-list">
+            <li><strong>Name:</strong> {{ user.full_name }}</li>
+            <li><strong>Email:</strong> {{ user.email }}</li>
+            <li><strong>Bio:</strong> {{ user.bio }}</li>
+            <!-- Add more personal details as needed -->
+        </ul>
+    </div>
+</section>
+{% endblock %}
